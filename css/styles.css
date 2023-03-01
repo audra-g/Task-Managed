@@ -1,22 +1,18 @@
-h1, h2 { 
-    font-family: 'Mynerve', cursive;
-}
+h1, h2 {
+  font-family: 'Mynerve', cursive; }
 
 .jumbotron {
-    margin: 0;
-    padding: 30px;
-    background-color: linear-gradient(to right, #5637dd, #3046C5, #60106b);
-    color: rgb(0, 0, 0); }
-  
+  margin: 0;
+  padding: 30px;
+  background-color: linear-gradient(to right, #5637dd, #3046C5, #60106b);
+  color: black; }
+
 .navbar {
-    background-color: black;
-}
+  background-color: black; }
 
 .site-footer {
-    background-color: black;
-    padding: 20px 0;
-}
+  background-color: black;
+  padding: 20px 0; }
 
-#logo-reverse{
-    filter:invert(1);
-}
+#logo-reverse {
+  filter: invert(1); }
