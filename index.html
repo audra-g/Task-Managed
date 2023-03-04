@@ -74,12 +74,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contactus.html">
-                <i class="fa fa-address-card fa-lg"></i> Blog
+                <i class="fa fa-book fa-lg"></i> Resources
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">
-                <i class="fa fa-book fa-lg"></i> Resources
+                <i class="fa fa-address-card fa-lg"></i> Contact
               </a>
             </li>
           </ul>
@@ -88,21 +88,117 @@
     </nav>
 
     <!--Task Section-->
-
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>TASK DAILY</h1>
-        </div>
-        <div class="col form-group">
-          <form>
-            <!--TO BE ADDED-->
-          </form>
+      <div class="row row-content">
+        <span class="navbar-text mr-auto mt-4">
+          <a role="button" id="addNewTaskBtn" class="btn btn-success">
+            <i class="fa fa-magic"></i> Add New Task
+          </a>
+        </span>
+      </div>
+    </div>
+    <div id="addNewTask" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">New Task</h3>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="card">
+                      <div class="card-header">
+                        <h2 class="text-center" id="taskListHeader">
+                          My Task List
+                        </h2>
+                      </div>
+                      <div class="card-body">
+                        <div class="form-group">
+                          <label for="newTask">To Do</label>
+                          <div class="input-group">
+                            <input
+                              type="text"
+                              id="newTask"
+                              class="form-control"
+                              placeholder="Enter task here"
+                            />
+                            <div class="input-group-append">
+                              <button
+                                class="btn btn-primary"
+                                onclick="newElement()"
+                              >
+                                Add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="details">Details</label>
+                          <input
+                            type="text"
+                            id="details"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="date">Due Date</label>
+                          <input type="date" id="date" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label for="status">Status</label>
+                          <select
+                            name="status"
+                            id="status"
+                            class="form-control"
+                          >
+                            <option value="new">New</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Completed">Completed</option>
+                            <option value="On Hold">On Hold</option>
+                          </select>
+                        </div>
+                        <ul id="taskList" class="list-group"></ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!--Footer
+    <!--Task List Body-->
+    <div class="container">
+      <div class="row row-content">
+        <div class="col">
+          <table id="taskTable" class="table table-striped">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Details</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -144,6 +240,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
     <!-- endbuild -->
   </body>
 </html>
