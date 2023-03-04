@@ -27,6 +27,11 @@
       href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Mynerve&display=swap" rel="stylesheet">
+
+
     <title>Task Managed</title>
   </head>
   <body>
@@ -83,6 +88,11 @@
               </a>
             </li>
           </ul>
+          <span class="navbar-text mr-auto">
+            <a role="button" id="signOut" class=" btn">
+              <i class="fa fa-sign-out">Sign Out</i>
+            </a>
+          </span>
         </div>
       </div>
     </nav>
@@ -90,8 +100,8 @@
     <!--Task Section-->
     <div class="container">
       <div class="row row-content">
-        <span class="navbar-text mr-auto mt-4">
-          <a role="button" id="addNewTaskBtn" class="btn btn-success">
+        <span class="mr-auto mt-4">
+          <a role="button" id="addNewTaskBtn" class="btn btn-success mb-4">
             <i class="fa fa-magic"></i> Add New Task
           </a>
         </span>
@@ -198,20 +208,36 @@
       </div>
     </div>
 
+    <!--Day Completed Button-->
+    <div class="container">
+      <div class="row row-content">
+        <div class="col">
+          <button type="button" id="dayCompleted" class="btn btn-dark text-right float-right">All Tasks Completed</button>
+        </div>
+      </div>
+    </div>
+<!--additional stuff-->
+<div class="container">
+<div class="row row-content align-items-center">
+  <div class="col" id="extraspace">
+  </div>
+   </div>
+   </div>
+   </div>
     <!--Footer-->
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-4 col-sm-2 offset-1">
+          <div class="col-4 col-sm-2">
             <h5>Links</h5>
             <ul class="list-unstyled">
               <li><a href="/index.html">Home</a></li>
               <li><a href="/about.html">About</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#">Resources</a></li>
               <li><a href="/contact.html">Contact</a></li>
             </ul>
           </div>
-          <div class="col-6 col-sm-5 text-center">
+          <div class="col-8 col-sm-6 text-center">
             <h5>Social</h5>
             <a
               class="btn btn-social-icon btn-instagram"
@@ -234,12 +260,13 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer> 
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
     <!-- endbuild -->
   </body>

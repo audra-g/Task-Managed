@@ -1,8 +1,9 @@
 $(function () {
+  
     $("#addNewTaskBtn").on("click", function () {
       $("#addNewTask").modal("show");
     });
-
+  
   }); 
 
   function newElement() {
@@ -114,3 +115,4 @@ $(function () {
         $('#addNewTask').modal('hide');
     }
 }
+

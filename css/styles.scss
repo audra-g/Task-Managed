@@ -1,16 +1,21 @@
-$color-primary: #3046C5;
-$color-secondary: #5637dd;
-$color-pale: #000000;
-$color-mid: #901CAD;
-$color-dark: #60106b;
+$color-primary: #ffffff;
+$color-secondary: #cfcdcf;
+$color-pale: #dfb1bb;
+$color-mid: #7c6d42;
+$color-dark: #301c02;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
+$body-font: 'Golos Text', sans-serif;
+$header-font: "Mynerve", cursive;
+
 h1, h2 {
-    font-family: "Mynerve", cursive; }
+    font-family: $header-font; 
+} 
   
   .jumbotron {
     margin: 0;
     padding: 30px;
+    background-image: linear-gradient(to right, $color-primary, $color-dark);
   
    }
   
@@ -18,10 +23,28 @@ h1, h2 {
     background-color: black; }
   
   .site-footer {
+    .fa { 
+      color:white; 
+      size: 10rem; 
+    }
     padding: 20px 0; 
-    
+    background-color: black; 
+    color: rgb(255, 255, 255); 
+
   }
-  
+
+  .table{
+    font-family: $body-font;
+    font-size-adjust:inherit; 
+  }
+
+    .modal-header {
+        background-color: $color-dark; 
+        color: white; 
+    }   
+
+
+
   #logo-reverse {
     filter: invert(1); 
   }
@@ -31,3 +54,8 @@ h1, h2 {
     list-style-type: none;
   }
   
+#extraspace{
+  padding: 100px;
+  margin: auto; 
+}
+
